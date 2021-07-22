@@ -54,7 +54,7 @@ KERNEL_SIZE = 3
   </td>
 <td>
 
-**Markdown** _here_. (Blank lines needed before and after!)
+In progress
 
 </td>
 </tr>
