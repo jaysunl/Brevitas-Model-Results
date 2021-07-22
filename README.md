@@ -37,7 +37,12 @@ KERNEL_SIZE = 3
 73.24%
 </td>
 <td>
+  
 Converges/slows down a lot at 300th epoch. May observe noticeable growth later.
+```bash
+BREVITAS_JIT=1 brevitas_bnn_pynq_train --network CNV_1W1A --resume /path/to/checkpoint.tar
+```
+  
 </td>
 </tr>
 <tr>
