@@ -154,8 +154,7 @@ Trained for 160 epochs
 </td>
 </tr>
 <tr>
-<td> 
-Original model 
+<td>  
   
 ```python
 CNV_OUT_CH_POOL = [(16, False), (16, True), (32, True), (32, True), (64, False), (64, False)]
