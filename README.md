@@ -3,7 +3,7 @@ Training smaller models on the CIFAR dataset
 
 <table>
 <tr>
-  <td> <b> Input Layers </b> </td> <td> <b> Results (Last 10 Batches of Last Epoch) </b> </td> <td> <b> Top1 Accuracy </b> </td> <td> <b> Notes </b> </td>
+  <td> <b> Input Layers </b> </td> <td> <b> Eval Log Results </b> </td> <td> <b> Top1 Accuracy </b> </td> <td> <b> Notes </b> </td>
 </tr>
 <tr>
 <td> 
