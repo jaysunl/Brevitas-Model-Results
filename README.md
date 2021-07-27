@@ -1,11 +1,16 @@
 # Brevitas-Model-Results
-Training smaller models on the CIFAR (CNV_1W1A) dataset
+Training smaller models on the CIFAR dataset
 
 <table>
 <tr>
-  <td> <b> Input Layers </b> </td> <td> <b> Eval Log Results </b> </td> <td> <b> Top1 Accuracy </b> </td> <td> <b> Notes </b> </td>
+  <td> <b> Name </b> </td> <td> <b> Input Layers </b> </td> <td> <b> Eval Log Results </b> </td> <td> <b> Top1 Accuracy </b> </td> <td> <b> Notes </b> </td>
 </tr>
 <tr>
+<td>
+  
+CNV_1W1A
+  
+</td>
 <td> 
 Original model 
   
@@ -44,6 +49,9 @@ Slows down at around 150 epochs. Pretrained model records top1 acc. at 84.22%.
 </td>
 </tr>
 <tr>
+<td>
+CNV_1W1A
+</td>
 <td> 
   
 ```python
@@ -84,6 +92,9 @@ BREVITAS_JIT=1 brevitas_bnn_pynq_train --network CNV_1W1A --resume /path/to/chec
 </td>
 </tr>
 <tr>
+<td>
+CNV_1W1A
+</td>
 <td> 
   
 ```python
@@ -119,6 +130,9 @@ Slows down at 150th epoch (little growth to 300th epoch)
 </td>
 </tr>
 <tr>
+<td>
+CNV_1W1A
+</td>
 <td> 
   
 ```python
@@ -154,6 +168,9 @@ Trained for 160 epochs
 </td>
 </tr>
 <tr>
+<td>
+CNV_1W1A
+</td>
 <td>  
   
 ```python
@@ -191,6 +208,9 @@ Trained for 160 epochs
 </td>
 </tr>
 <tr>
+<td>
+CNV_1W1A
+</td>
 <td>  
   
 ```python
@@ -228,6 +248,9 @@ Trained for 160 epochs
 </td>
 </tr>
 <tr>
+<td>
+CNV_1W1A
+</td>
 <td>  
   
 ```python
