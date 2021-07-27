@@ -227,4 +227,41 @@ Trained for 160 epochs
   
 </td>
 </tr>
+<tr>
+<td>  
+  
+```python
+CNV_OUT_CH_POOL = [(32, False), (32, True), (256, False), (256, True), (256, False), (256, False)]
+INTERMEDIATE_FC_FEATURES = [(256, 512), (512, 512)]
+LAST_FC_IN_FEATURES = 512
+LAST_FC_PER_OUT_CH_SCALING = False
+POOL_SIZE = 2
+KERNEL_SIZE = 3
+```  
+</td>
+<td>
+
+```html
+2021-07-27 00:25:07,447 Test: [90/100]  Model Time 0.008 (0.016)        Loss Time 0.000 (0.000) Loss 0.0960 (0.1075)    Prec@1 84.000 (81.363) Prec@5 99.000 (98.593)
+2021-07-27 00:25:07,457 Test: [91/100]  Model Time 0.008 (0.016)        Loss Time 0.000 (0.000) Loss 0.0833 (0.1072)    Prec@1 85.000 (81.402) Prec@5 98.000 (98.587)
+2021-07-27 00:25:07,467 Test: [92/100]  Model Time 0.008 (0.016)        Loss Time 0.000 (0.000) Loss 0.0783 (0.1069)    Prec@1 91.000 (81.505) Prec@5 100.000 (98.602)
+2021-07-27 00:25:07,476 Test: [93/100]  Model Time 0.007 (0.016)        Loss Time 0.000 (0.000) Loss 0.1055 (0.1069)    Prec@1 79.000 (81.479) Prec@5 100.000 (98.617)
+2021-07-27 00:25:07,486 Test: [94/100]  Model Time 0.007 (0.016)        Loss Time 0.000 (0.000) Loss 0.1169 (0.1070)    Prec@1 81.000 (81.474) Prec@5 96.000 (98.589)
+2021-07-27 00:25:07,496 Test: [95/100]  Model Time 0.007 (0.016)        Loss Time 0.000 (0.000) Loss 0.0953 (0.1069)    Prec@1 83.000 (81.490) Prec@5 99.000 (98.594)
+2021-07-27 00:25:07,505 Test: [96/100]  Model Time 0.007 (0.016)        Loss Time 0.000 (0.000) Loss 0.0940 (0.1067)    Prec@1 85.000 (81.526) Prec@5 99.000 (98.598)
+2021-07-27 00:25:07,515 Test: [97/100]  Model Time 0.008 (0.016)        Loss Time 0.000 (0.000) Loss 0.1232 (0.1069)    Prec@1 76.000 (81.469) Prec@5 99.000 (98.602)
+2021-07-27 00:25:07,534 Test: [98/100]  Model Time 0.015 (0.016)        Loss Time 0.001 (0.000) Loss 0.1279 (0.1071)    Prec@1 77.000 (81.424) Prec@5 96.000 (98.576)
+2021-07-27 00:25:07,550 Test: [99/100]  Model Time 0.013 (0.015)        Loss Time 0.000 (0.000) Loss 0.1100 (0.1071)    Prec@1 82.000 (81.430) Prec@5 100.000 (98.590)
+```
+</td>
+
+<td>
+81.52%
+</td>
+<td>
+  
+Trained for ~160 epochs
+  
+</td>
+</tr>
 </table>
