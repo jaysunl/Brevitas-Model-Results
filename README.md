@@ -1,5 +1,5 @@
 # Brevitas-Model-Results
-Training smaller models on the CIFAR dataset
+Training smaller models on the CIFAR (CNV_1W1A) dataset
 
 <table>
 <tr>
