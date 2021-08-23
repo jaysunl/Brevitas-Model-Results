@@ -1,4 +1,4 @@
-# Brevitas-Model-Results
+# Brevitas Model Results
 
 <table>
 <tr>
