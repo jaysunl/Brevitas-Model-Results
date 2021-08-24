@@ -134,7 +134,9 @@ hyperparameters:
       - 2     
       - 4
   ```
-|  | Original | Trial 1049 | Trial 987 |
-| --- | --- | --- | --- |
-|  | List all new or modified files |
+|  | Original | Trial 1045 | Trial 957 | Trial 1746 |
+| --- | --- | --- | --- | --- |
+| ```
+ validation_accuracy
+ ```| List all new or modified files |
 | git diff | Show file differences that haven't been staged |
