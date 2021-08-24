@@ -1,5 +1,5 @@
 # Determined Model Results
-The following hyperparameters were used to train the CNN model using Determined AI's adaptive scan (ASHA) algorithm. The optimal results are shown below.
+The following hyperparameters were used to train the CNN model using Determined AI's adaptive scan (ASHA) algorithm. The optimal results are shown below. We will also be seeing how varying the strides affect the accuracy.
 ```yaml
 hyperparameters:
   act_bit_width:
