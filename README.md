@@ -133,10 +133,47 @@ hyperparameters:
       - 1     
       - 2     
       - 4
+  searcher:
+    bracket_rungs: []
+    divisor: 4
+    max_concurrent_trials: 0
+    max_length:
+      epochs: 32
+    max_rungs: 5
+    max_trials: 500
+    metric: validation_accuracy
+    mode: standard
+    name: adaptive_asha
+    smaller_is_better: true
+    source_checkpoint_uuid: null
+    source_trial_id: null
+    stop_once: false
   ```
-|  | Original | Trial 1045 | Trial 957 | Trial 1746 |
+Key:
+- **Bold** values represent model values we are interested in (shrinking the model) with respect to the original Brevitas model.  
+- Plain values represent larger model parameters.
+
+| Hyperparameters | Original | Trial 1045 | Trial 957 | Trial 1746 |
 | --- | --- | --- | --- | --- |
-| ```
- validation_accuracy
- ```| List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| `epochs` | 1000 | 32 | 32 | 32 |
+| `validation_accuracy`| 0.842200 | 0.847400 | 0.845800 | 0.840700 | 
+| `act_bit_width` | 1 | 2 | 4 | 1 |
+| `cnv_out_ch_0` | 64 | 128 | 128 | 128 |
+| `cnv_out_ch_1` | 64 | 256 | 64 | 512 |
+| `cnv_out_ch_2` | 128 | 256 | 512 | 128 |
+| `cnv_out_ch_3` | 128 | 512 | 512 | 256 |
+| `cnv_out_ch_4` | 256 | 256 | 512 | 512 |
+| `cnv_out_ch_5` | 256 | 512 | 512 | 512 |
+| `cnv_pool_0` | `false` | `false` | `false` | `false` |
+| `cnv_pool_1` | `true` | `true` | `true` | **`false`** |
+| `cnv_pool_2` | `false` | `false` | `false` | `false` |
+| `cnv_pool_3` | `true` | **`false`** | **`false`** | `true` |
+| `cnv_pool_4` | `false` | `true` | `true` | `false` |
+| `cnv_pool_5` | `false` | `true` | `false` | `false` |
+| `int_fc_feat_1` | 512 | **16** | **32** | **256** |
+| `int_fc_feat_2` | 512 | **128** | **64** | **32** |
+| `kern_size` | 3 | 3 | **2** | **2** |
+| `learning_rate` | 0.02 | 9.817997e-3 | 5.698063e-3 | 0.010601 |
+| `pool_size` | 2 | 2 | 2 | 2 |
+| `weight_bit_width` | 1 | 4 | 2 | 2 |
+
