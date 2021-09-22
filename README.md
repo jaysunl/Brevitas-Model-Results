@@ -399,4 +399,4 @@ With varied strides:
 | `kern_size` | 3 | 3 | **2** | 3 |
 | `learning_rate` | 0.02 | 0.014109 | 8.059209e-3 | 8.508932e-3 |
 | `pool_size` | 2 | 4 | 2 | 2 |
-| `weight_bit_width` | 1 | 4 | 2 | 1 |
+| `weight_bit_width` | 1 | 1 | 1 | 1 |
